@@ -32,6 +32,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/mimstar_eggs/mydockerfiles:python_3.11_polywright
-            ghcr.io/mimstar/mydockerfiles:python_3.11_polywright
+          tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}
